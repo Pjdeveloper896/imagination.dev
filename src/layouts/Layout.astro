@@ -1,3 +1,6 @@
+---
+const { title = "Landing Page" } = Astro.props;
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -6,7 +9,17 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Add to src/layouts/BaseLayout.astro or in your head tag -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+ <link rel="icon" type="image/x-icon" href= "https://www.canva.com/design/DAGotnK1SFI/MREiLobZxl7ZCgKY34ThVA/view?utm_content=DAGotnK1SFI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9c58dbc141">
 	</head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 	<body>
 		<slot />
 	</body>

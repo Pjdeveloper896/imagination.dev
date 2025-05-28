@@ -1,45 +1,31 @@
- <div class="container body">
-   <div class="hero">
-     <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="imagination" height="250px" width="300px">
-     </img>
-      <h1 class="center-align h1">Welcome to Imagination <br/> "You think we create "</h1>
-      <div class="card black">
-        <a href="https://dev.to/pjdeveloper896" class="btn-floating white black-text">
-          dev.to
-        </a>
-        <a href="https://github.com/Pjdeveloper896" class="a2 btn-floating white black-text" >git hub </a>
-      </div>
-</div>
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout>
+  <Nav/>
+   <div class="container body">
       <div class="row">
         <div class="col s12 m6 l4">
           <div class="card black card-scroll">
             <div class="card-content white-text">
-              <span class="card-title">Future</span>
-              <img src="https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" height="250px" width="250px">
-              </img>
-              <p>WE create future . <br/>For you and other developers</p>
+              <span class="card-title">Contact page</span>
+             
+              <p>contact us </p>
             </div>
           </div>
         </div>
 
-        <div class="col s12 m6 l4">
-          <div class="card black card-scroll">
-            <div class="card-content white-text">
-              <img src="https://images.pexels.com/photos/32260200/pexels-photo-32260200/free-photo-of-modern-spiral-skylight-in-architectural-design.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" height="250px" width="250px">
-              </img>
-              <span class="card-title">Innovative </span>
-              <p>Apps that we create are very innovative </p>
-            </div>
-          </div>
-        </div>
 
         <div class="col s12 m6 l4">
           <div class="card black card-scroll">
             <div class="card-content white-text">
-            <img src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="250ppx" height="250px">
-            </img>
-              <span class="card-title">Beautiful</span>
-              <p>Enjoy our apps UI <br/>That is very innovative and responsive .</p>
+            
+              <span class="card-title">contact us on email </span>
+              <p>email</p>
+              <a href="prasoonjsdon.pis6@gmail.com">
+              </a>
             </div>
           </div>
         </div>
@@ -121,3 +107,5 @@
   });
 
     </script>
+  <Footer/>
+</Layout>

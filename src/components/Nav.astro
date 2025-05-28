@@ -1,0 +1,32 @@
+---
+// You can accept props here if needed
+---
+
+<nav>
+  <div class="nav-wrapper black">
+    </img>
+    <a href="#!" class="brand-logo">Imagination.DEV</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+        <li><a href="/contact">Products</a></li>
+  <li><a href="/products">contact us</a></li>
+    <li><a href="/">home</a></li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav " id="mobile-demo">
+  <li><a href="/contact">Products</a></li>
+  <li><a href="/products">contact us</a></li>
+    <li><a href="/">home</a></li>
+</ul>
+
+<!-- Initialize sidenav JS after DOM load -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems);
+  });
+</script>
